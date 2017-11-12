@@ -412,6 +412,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libjson
 
+# SafailNet
+PRODUCT_PACKAGES += \
+    init.safailnet.rc
+
 # RCS
 PRODUCT_PACKAGES += \
     rcs_service_aidl \
