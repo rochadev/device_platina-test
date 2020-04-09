@@ -474,7 +474,8 @@ PRODUCT_PACKAGES += \
 
 # Soong
 PRODUCT_SOONG_NAMESPACES += \
-    $(DEVICE_PATH)
+    $(DEVICE_PATH) \
+    hardware/google/pixel
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
