@@ -868,6 +868,9 @@
     <!-- Default value for led color when battery is fully charged -->
     <integer name="config_notificationsBatteryFullARGB">0xFF00FF00</integer>
 
+    <!-- Whether or not to use Night Light -->
+    <bool name="config_nightDisplayAvailable">true</bool>
+
     <!-- Multicolor Led Support -->
     <bool name="config_multiColorBatteryLed">false</bool>
 
