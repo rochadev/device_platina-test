@@ -264,7 +264,8 @@ PRODUCT_PACKAGES += \
     init.qti.fm.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.safailnet.rc
 
 # Ion
 PRODUCT_PACKAGES += \
@@ -411,10 +412,6 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
-
-# SafailNet
-PRODUCT_PACKAGES += \
-    init.safailnet.rc
 
 # RCS
 PRODUCT_PACKAGES += \
