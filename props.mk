@@ -407,6 +407,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=392 \
     vendor.display.lcd_density=392
 
+# Radio
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.iwlan.enable=true \
+    persist.vendor.radio.data_con_rprt=1
+
 # Touch
 PRODUCT_PROPERTY_OVERRIDES += \
 	touch.deviceType=touchScreen \
