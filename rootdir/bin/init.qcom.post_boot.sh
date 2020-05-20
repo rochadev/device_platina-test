@@ -92,3 +92,5 @@
 	  echo "schedutil" > /sys/devices/system/cpu/cpu4/cpufreq/scaling_governor
 	  setprop sys.use_fifo_ui 1
 	fi
+
+  echo lz4 > /sys/block/zram0/comp_algorithm
