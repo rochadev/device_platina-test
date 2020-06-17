@@ -56,7 +56,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.audio.spkr_prot.tx.sampling_rate=48000 \
     vendor.audio.volume.headset.gain.depcal=true \
     vendor.fm.a2dp.conc.disabled=true \
-    vendor.voice.path.for.pcm.voip=true
+    vendor.voice.path.for.pcm.voip=true \
+    persist.vendor.audio.fluence.voicecall=true \
+    persist.vendor.audio.fluence.voicerec=false \
+    persist.vendor.audio.fluence.speaker=true \
+    vendor.audio.adm.buffering.ms=6 \
+    vendor.audio.offload.track.enable=false
 
 # Audio Feature
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -199,7 +204,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     media.stagefright.enable-player=true \
     media.stagefright.enable-qcp=true \
     media.stagefright.enable-scan=true \
-		media.stagefright.thumbnail.prefer_hw_codecs=true \
+    media.stagefright.thumbnail.prefer_hw_codecs=true \
     mm.enable.qcom_parser=13631471 \
     mm.enable.smoothstreaming=true \
     mmp.enable.3g2=true \
@@ -336,14 +341,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.qcom.ad.calib.data=/system/etc/calib.cfg \
 	ro.qcom.ad.sensortype=2
 
-# Audio
-PRODUCT_PROPERTY_OVERRIDES += \
-	persist.vendor.audio.fluence.voicecall=true \
-	persist.vendor.audio.fluence.voicerec=false \
-	persist.vendor.audio.fluence.speaker=true \
-	vendor.audio.adm.buffering.ms=6 \
-	vendor.audio.offload.track.enable=false
-
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
 	persist.bokeh.switch.lux=290 \
@@ -374,8 +371,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.camera.display.umax=1920x1080 \
 	persist.vendor.camera.display.lmax=1280x720 \
 	vidc.enc.dcvs.extra-buff-count=2 \
-	persist.vendor.camera.eis.enable=0 \
-	persist.camera.eis.enable=0 \
+	persist.vendor.camera.eis.enable=1 \
 	persist.vendor.camera.expose.aux=1 \
 	persist.vendor.camera.preview.ubwc=0 \
 	persist.vendor.camera.stats.test=0 \
@@ -401,7 +397,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.vendor.imx376_ofilm.low.lux=290 \
 	persist.vendor.imx376_ofilm.light.lux=275 \
 	persist.vendor.bokeh.switch.lux=290 \
-	persist.vendor.camera.exif.make=Xiaomi
+	persist.vendor.camera.exif.make=Xiaomi \
+    persist.camera.privapp.list=org.codeaurora.snapcam \
+    persist.vendor.camera.dual.isp.sync=0 \
+    persist.vendor.camera.HAL3.enabled=1 \
+    persist.vendor.camera.exif.make=Xiaomi \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam \
+    vendor.camera.aux.packageblacklist=com.google.android.GoogleCamera,com.discord \
+    vendor.camera.aux.packagelist=com.android.camera
 
 # Dual SIM
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -434,15 +437,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	MultitouchSettleInterval=1ms \
 	MultitouchMinDistance=1px \
 	TapInterval=1ms \
-	TapSlop=1px    
-
-# Emulator keyboard configuration
-PRODUCT_PROPERTY_OVERRIDES += \
-    keyboard.layout = qwerty \
-    keyboard.characterMap = qwerty \
-    keyboard.characterMap = qwerty2 \
-    keyboard.orientationAware = 1 \
-    keyboard.builtIn = 1 \
-    cursor.mode = navigation \
-    cursor.orientationAware = 1
-
+	TapSlop=1px
