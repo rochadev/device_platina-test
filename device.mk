@@ -547,15 +547,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
-# Device-specific settings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Vendor files
 $(call inherit-product, vendor/xiaomi/platina/platina-vendor.mk)
 
 # AOSP DEVICE
-PRODUCT_NAME := aosp_platina
+PRODUCT_NAME := du_platina
 PRODUCT_DEVICE := platina
 PRODUCT_MODEL := Mi 8 Lite (AOSP)
 PRODUCT_BRAND := Xiaomi
