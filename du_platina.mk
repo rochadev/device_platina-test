@@ -41,7 +41,7 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="platina" \
     PRIVATE_BUILD_DESC="platina-user 10 QKQ1.190910.002 V11.0.1.0.QDTCNXM release-keys"
 
-BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200605.001/6392402:user/release-keys"
+BUILD_FINGERPRINT := "google/coral/coral:10/QQ3A.200705.002/6506677:user/release-keys"
 
 TARGET_VENDOR_PRODUCT_NAME := platina
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
