@@ -15,6 +15,11 @@
     "branch":      "10"
   },
   {
+    "repository":  "Ancient-Project/gcc-prebuilt",
+    "target_path": "compiler",
+    "branch":      "pie-r40"
+  },
+  {
     "repository": "device_xiaomi_platina",
     "target_path": "device/xiaomi/platina",
     "branch": "10"
