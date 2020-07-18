@@ -128,6 +128,9 @@ on init
     start vendor.configstore-hal
     start vendor.qti.hardware.display.allocator
 
+on early-init
+    write /sys/block/zram0/comp_algorithm lz4
+
 on post-fs-data
     mkdir /data/tombstones/modem 0771 system system
     mkdir /data/tombstones/lpass 0771 system system

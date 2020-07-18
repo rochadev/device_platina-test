@@ -434,3 +434,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Zygote preforking
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.device_config.runtime_native.usap_pool_enabled=true
+
+# ADDITIONAL_BUILD_PROPERTIES
+PRODUCT_PROPERTY_OVERRIDES += \
+    vnswap.enabled=true \
+    ro.config.zram=true \
+    ro.config.zram.support=true
