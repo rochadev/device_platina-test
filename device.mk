@@ -507,8 +507,8 @@ PRODUCT_PACKAGES += \
     thermal.sdm660
 
 # Thermal Controller
-PRODUCT_PACKAGES += \
-   ThermalController
+#PRODUCT_PACKAGES += \
+#   ThermalController
 
 # USB
 PRODUCT_PACKAGES += \
