@@ -32,6 +32,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Inherit proprietary files
 $(call inherit-product-if-exists, vendor/gapps/common/common-vendor.mk)
 
+# Firmware
+$(call inherit-product, vendor/xiaomi-firmware/platina/firmware.mk)
+
 # Device Path
 DEVICE_PATH := device/xiaomi/platina
 
@@ -321,9 +324,9 @@ PRODUCT_PACKAGES += \
     netutils-wrapper-1.0
 
 # Offline charger
-PRODUCT_PACKAGES += \
-    charger_res_images \
-    product_charger_res_images
+#PRODUCT_PACKAGES += \
+#    charger_res_images \
+#    product_charger_res_images
 
 # OMX
 PRODUCT_PACKAGES += \

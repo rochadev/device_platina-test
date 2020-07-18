@@ -33,8 +33,8 @@ $(call inherit-product, device/xiaomi/platina/device.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
-# Inherit some Corvus OS stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
+# Inherit some common AOSP stuff.
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="platina" \
@@ -52,6 +52,6 @@ DU_BUILD_TYPE := OFFICIAL
 # Device identifier
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_NAME := du_platina
+PRODUCT_NAME := aosp_platina
 PRODUCT_DEVICE := platina
-PRODUCT_MODEL := MI 8 Lite
+PRODUCT_MODEL := Mi 8 Lite

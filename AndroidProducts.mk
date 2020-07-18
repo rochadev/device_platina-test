@@ -22,9 +22,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/du_platina.mk
+    $(LOCAL_DIR)/aosp_platina.mk
 
 COMMON_LUNCH_CHOICES := \
-    du_platina-eng \
-    du_platina-userdebug \
-    du_platina-user
+    aosp_platina-eng \
+    aosp_platina-userdebug \
+    aosp_platina-user
