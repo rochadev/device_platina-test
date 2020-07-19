@@ -259,3 +259,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # inherit from the proprietary version
 -include vendor/xiaomi/platina/BoardConfigVendor.mk
+
+# Releasetools (fw auto-install)
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
